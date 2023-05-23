@@ -1,0 +1,33 @@
+body {
+    background-color: #efefef;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item .pillTurno {
+    color: #000;
+}
+
+.form {
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.form input {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.form .contenedor_botones {
+    display: flex;
+    column-gap: 10px;
+}
+
+.form .contenedor_botones button {
+    flex-grow: 1;
+}

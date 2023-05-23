@@ -8,13 +8,56 @@
     , initial-scale=1.0">
     <title>Crossfit</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.5/sweetalert2.min.css"
+        integrity="sha512-InYSgxgTnnt8BG3Yy0GcpSnorz5gxHvT6OEoRWj91Gg+RvNdCiAharnBe+XFIDS754Kd9TekdjXw3V7TAgh6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>TURNOS</h1>
+    <h1 class="text-center mt-5 mb-5">TURNOS</h1>
 
-    <!-- <script src="app.js"></script> -->
-    <script src="./2daPreEntrega.js"></script>
+    <!-- llenar con funcion JS -->
+    <div class="list-group mx-5" id="list-group"></div>
+
+    <!-- formulario -->
+    <form class="form m-5 p-4" action="#" id="form">
+        <h2 class="form-title text-center">Contactanos</h2>
+
+        <label for="nombre" class="form__label"></label>
+        <input type="text" class="rounded p-2" placeholder="Nombre completo" name="nombre" id="nombre" required />
+
+        <label for="telefono" class="form__label"></label>
+        <input type="tel" class="rounded p-2" placeholder="Telefono" name="telefono" id="tlf" required />
+
+        <label for="email" class=""></label>
+        <input type="email" class="rounded p-2" placeholder="Email" name="email" id="email" required />
+
+        <div class="contenedor_botones">
+            <button class="btn-enviar btn btn-success" type="submit">
+                enviar
+            </button>
+            <button class="btn-borrar btn btn-secondary" type="reset">
+                borrar
+            </button>
+        </div>
+    </form>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3a77906e13.js" crossorigin="anonymous"></script>
+    <!-- swal2     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.5/sweetalert2.min.js"
+        integrity="sha512-jt82OWotwBkVkh5JKtP573lNuKiPWjycJcDBtQJ3BkMTzu1dyu4ckGGFmDPxw/wgbKnX9kWeOn+06T41BeWitQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- javascript -->
+    <script src="./formulario.js"></script>
+    <script src="./3eraPreEntrega.js"></script>
 </body>
 
 </html>
